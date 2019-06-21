@@ -11,6 +11,10 @@ install -m 644 files/console-setup   	"${ROOTFS_DIR}/etc/default/"
 
 install -m 755 files/rc.local		"${ROOTFS_DIR}/etc/"
 
+install -m 755 files/sculpture-bluetooth	${ROOTFS_DIR}/usr/bin/sculpture-bluetooth
+
+install -m 644 files/authorized_keys 	${ROOTFS_DIR}/home/pi/.ssh
+
 on_chroot << EOF
 systemctl disable hwclock.sh
 systemctl disable nfs-common
