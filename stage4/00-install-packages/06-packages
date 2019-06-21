@@ -1,0 +1,7 @@
+libatlas-base-dev gfortran
+libgtk-3-dev
+libboost-all-dev
+python3-scipy python3-skimage
+libzbar0 python-zbar zbar-tools
+# libzbar-dev
+python-opencv
